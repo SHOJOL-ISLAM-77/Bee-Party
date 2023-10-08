@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Alica",
+        "img": "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?w=1060&t=st=1696701279~exp=1696701879~hmac=db9b6a44784ec59963e3fb480f843d3f8dfe68bdd25c4e3907c71188ebf135fb",
+        "content": "I hosted my birthday party through this service, and it was incredible. The decorations, entertainment, and planning were top-notch."
+    },
+    {
+        "id": 2,
+        "name": "Bobe",
+        "img": "https://i.ibb.co/cgxQqts/good-looking-young-woman-sunglasses-smiling.jpg",
+        "content": "This event management team made my birthday celebration unforgettable. Everything was well-organized, and the staff was friendly and efficient."
+    },
+    {
+        "id": 3,
+        "name": "Charlie",
+        "img": "https://img.freepik.com/free-photo/man-wearing-waistcoat_1368-2886.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.1.489338979.1694797420&semt=sph",
+        "content": "I had a fantastic experience with this birthday party service. They took care of every detail, and I could relax and enjoy my special day."
+    },
+    {
+        "id": 4,
+        "name": "David",
+        "img": "https://img.freepik.com/free-photo/man-isolated-showing-emotions-end-gestures_1303-30095.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.1.489338979.1694797420&semt=sph",
+        "content": "The team at this event management company did an exceptional job with my birthday party. The decorations were stunning, and the entertainment was a hit."
+    },
+    {
+        "id": 5,
+        "name": "Eva",
+        "img": "https://i.ibb.co/FYG39LW/businesswoman-executive-professional-success-concept.jpg",
+        "content": "I highly recommend this birthday management service. They made my special day truly memorable. From the cake to the games, everything was perfect."
+    },
+    {
+        "id": 6,
+        "name": "Frank",
+        "img": "https://img.freepik.com/free-photo/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background_1258-66609.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.1.489338979.1694797420&semt=sph",
+        "content": "Thanks to this event management team, my birthday celebration was a blast. The petting zoo they arranged for the kids was a big hit."
+    },
+    {
+        "id": 7,
+        "name": "Grace",
+        "img": "https://img.freepik.com/free-photo/portrait-smiling-handsome-man-eyeglasses_171337-4853.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.1.489338979.1694797420&semt=sph",
+        "content": "I had an amazing time at my birthday party, all thanks to this event management company. The DJ kept the party going, and everyone had a great time."
+    },
+    {
+        "id": 8,
+        "name": "Henry",
+        "img": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=sph",
+        "content": "My birthday in Paris organized by this team was a dream come true. The decorations at the Eiffel Tower were breathtaking."
+    },
+    {
+        "id": 9,
+        "name": "Isabel",
+        "img": "https://i.ibb.co/PQvjFkJ/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction.jpg",
+        "content": "I had a wonderful birthday party with delicious homemade pizza, thanks to this service. The chef they sent was a pro."
+    },
+    {
+        "id": 10,
+        "name": "Jack",
+        "img": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=sph",
+        "content": "The movie-themed birthday party organized by this team was a hit. The selection of classic films was perfect for movie buffs like me."
+    },
+    {
+        "id": 11,
+        "name": "Karan",
+        "img": "https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=sph",
+        "content": "I celebrated my birthday at an art gallery thanks to this event management company. The artwork and atmosphere were simply stunning."
+    },
+    {
+        "id": 12,
+        "name": "Liam",
+        "img": "https://i.ibb.co/ryp0nj8/indoor-shot-attractive-young-woman-with-glasses-posing-against-white-wall.jpg",
+        "content": "My fitness-themed birthday party was a success, all thanks to this team. We had a blast with fun workouts and healthy snacks."
+    }
+]
