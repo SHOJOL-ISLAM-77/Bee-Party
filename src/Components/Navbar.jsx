@@ -1,10 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { FaAlignJustify, FaTimes } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
-
+    const { user, logOut } = useContext(AuthContext);
+    const handleSingOut = ()=>{
+        logOut()
+        .then()
+        .catch()
+    }
     return (
         <div className="backdrop-blur-sm bg-white/30">
             <div className="py-10 px-5 relative  container mx-auto ">
@@ -13,7 +19,11 @@ const Navbar = () => {
                     <div className="list-none md:flex gap-12 text-lg hidden ">
                         <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline text-xl" : "text-black text-xl"}> Home</NavLink></li>
                         <li><NavLink to="/donation" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline text-xl" : "text-black text-xl"}> Donation</NavLink></li>
-                        <li><NavLink to="/statistics" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline text-xl" : "text-black text-xl"}> Login</NavLink></li>
+                        <li><NavLink to="/login" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline text-xl" : "text-black text-xl"}> Login</NavLink></li>
+
+                        {
+                            user && <li><button onClick={handleSingOut} className="bg-black text-white p-4 rounded-lg">Log Out</button> <img src="/vite.svg" className="inline" alt="" /></li> 
+                        }
                     </div>
                 </nav>
                 <div className="absolute top-10 right-5  md:hidden" onClick={() => setShow(!show)}>
@@ -26,7 +36,8 @@ const Navbar = () => {
                     <div className={`list-none text-lg text-right pr-10 duration-1000 ${show === false ? '-mt-96 rotate-180 ' : "mt-8 "}`}>
                         <li className="bg-black text-white text-center px-10 py-3 m-2 rounded-xl"><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline" : ""}> Home</NavLink></li>
                         <li className="bg-black text-white text-center px-10 py-3 m-2 rounded-xl"><NavLink to="/donation" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline" : ""}> Donation</NavLink></li>
-                        <li className="bg-black text-white text-center px-10 py-3 m-2 rounded-xl"><NavLink to="/statistics" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline" : ""}> Login</NavLink></li>
+                        <li className="bg-black text-white text-center px-10 py-3 m-2 rounded-xl"><NavLink to="/login" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-red-600 underline" : ""}> Login</NavLink></li>
+                        <li className="bg-black text-white text-center px-10 py-3 m-2 rounded-xl"><button>login</button></li>
                     </div>
                 </div>
 

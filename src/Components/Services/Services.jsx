@@ -1,9 +1,11 @@
 import Aos from 'aos';
 import PropTypes from 'prop-types';
+import { FaDollarSign } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Services = ({ info }) => {
 
-    const { title, description, image, } = info;
+    const { title, description, image, id, price } = info;
     Aos.init({
         offset: 200,
         duration: 600,
@@ -23,7 +25,8 @@ const Services = ({ info }) => {
                         {description.length < 200 ? <p>{description}</p> : <p>{description.slice(0, 200)}.......</p>}
                     </div>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary bg-gradient-to-r from-black to-blue-900 hover:from-blue-900 hover:to-black">See Details</button>
+                        <p className='text-2xl md:text-3xl inline-flex items-center'><FaDollarSign/> {price} </p>
+                        <Link to={`seeDetails/${id}`} className="btn btn-primary bg-gradient-to-r from-black to-blue-900 hover:from-blue-900 hover:to-black">See Details</Link>
                     </div>
                 </div>
             </div>

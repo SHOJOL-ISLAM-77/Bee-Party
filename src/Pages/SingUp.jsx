@@ -1,30 +1,26 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 
-const Login = () => {
-    const {login} = useContext(AuthContext);
-    const location = useLocation();
-    const navigate = useNavigate()
+const SingUp = () => {
+
+    const {createUserWithEmail} =useContext(AuthContext);
 
     const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        
-        login(email, password)
+        console.log(email, password);
+
+        createUserWithEmail(email, password)
         .then(result => {
-            console.log(result);
-
-            navigate(location?.state ? location.state : "/")
-
+            console.log(result.user);
         })
-        .catch(error =>{
-            console.error(error.massage);
+        .catch(error=> {
+            console.log(error.message);
         })
-        
     }
     return (
         <div>
@@ -49,9 +45,17 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary">Sign Up</button>
                         </div>
-                        <p>Do not have a account <Link className="text-blue-500 hover:underline" to="/singUp">Sing Up</Link></p>
+                        <div className="flex justify-around">
+                            <div className=" mt-6">
+                                <button className="btn btn-primary">google</button>
+                            </div>
+                            <div className=" mt-6">
+                                <button className="btn btn-primary">github</button>
+                            </div>
+                        </div>
+                        <p>Have a account <Link className="text-blue-500 hover:underline" to="/login">Login</Link></p>
                     </form>
                 </div>
 
@@ -60,4 +64,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SingUp;
