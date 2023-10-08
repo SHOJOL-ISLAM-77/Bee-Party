@@ -1,3 +1,4 @@
+import Swal from "sweetalert2"
 import img1 from "../../assets/img (1).png"
 import img2 from "../../assets/img (2).png"
 import img3 from "../../assets/img (3).png"
@@ -6,6 +7,13 @@ import img5 from "../../assets/img (5).png"
 import img6 from "../../assets/img (6).png"
 
 const WhatWeOffer = () => {
+    const handleHire=()=>{
+        Swal.fire(
+            'Good job!',
+            'We come to congratulate you!',
+            'success'
+          )
+    }
 
     return (
        <div className="bg-gradient-to-r from-blue-900 via-indigo-600 to-blue-900 text-white px-5">
@@ -39,7 +47,7 @@ const WhatWeOffer = () => {
             <div className="md:max-w-lg mx-auto text-center mb-12">
                 <h2 className="md:text-5xl text-3xl font-extrabold" data-aos="fade-up-right">What We Offer</h2>
                 <p className="text-xl my-20">Each event and client is unique, and we believe our services should be as well. We know what hiring a planner is all about!</p>
-                <button className="w-60 h-14 rounded-xl bg-gradient-to-r from-black to-blue-900 hover:from-blue-900 hover:to-black text-white text-xl">Hire Us</button>
+                <button onClick={handleHire} className="w-60 h-14 rounded-xl bg-gradient-to-r from-black to-blue-900 hover:from-blue-900 hover:to-black text-white text-xl">Hire Us</button>
             </div>
         </div>
        </div>

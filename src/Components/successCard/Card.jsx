@@ -26,7 +26,7 @@ const Card = () => {
         setShow(!show)
     }
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto text-white'>
             <div className="py-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10 ">
                 {successData?.slice(0, show ? successData.length : 6).map((success, index) => (
                     <div key={index} className="flex flex-col justify-between items-center max-w-sm md:max-w-md xl:max-w-xl gap-3  mx-auto "
@@ -39,7 +39,7 @@ const Card = () => {
                             <p data-aos="fade-left">{success.content}</p>
                             <FaCaretDown className='text-4xl text-black absolute -bottom-5'></FaCaretDown>
                         </div>
-                        <div className='flex gap-5' data-aos="fade-left">
+                        <div className='flex gap-5 text-black' data-aos="fade-left">
                             <img src={success.img} className='w-14 h-14 rounded-full' alt="" />
                             <h5 className='card-title py-2'>{success.name}</h5>
                         </div>

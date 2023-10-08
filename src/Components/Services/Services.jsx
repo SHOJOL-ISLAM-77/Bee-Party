@@ -17,7 +17,7 @@ const Services = ({ info }) => {
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000">
-            <div className="card card-compact max-w-[384px] mx-auto bg-base-100 shadow-xl font-Roboto">
+            <div className="card card-compact max-w-[384px] mx-auto bg-base-100 shadow-xl font-Roboto ">
                 <figure><img className='w-full h-[250px]' src={image} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{title}</h2>
@@ -26,7 +26,7 @@ const Services = ({ info }) => {
                     </div>
                     <div className="card-actions justify-end">
                         <p className='text-2xl md:text-3xl inline-flex items-center'><FaDollarSign/> {price} </p>
-                        <Link to={`seeDetails/${id}`} className="btn btn-primary bg-gradient-to-r from-black to-blue-900 hover:from-blue-900 hover:to-black">See Details</Link>
+                        <Link to={`seeDetails/${id}`} className="btn bg-gradient-to-r text-white from-black to-blue-900 hover:from-blue-900 hover:to-black">See Details</Link>
                     </div>
                 </div>
             </div>

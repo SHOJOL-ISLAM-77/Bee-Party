@@ -10,7 +10,7 @@ const Banner = () => {
         easing: 'ease-in-sine',
     });
     return (
-        <div className="lg:my-28 flex flex-col justify-center items-center gap-6 " data-aos="flip-left" >
+        <div className="lg:my-28 flex flex-col justify-center items-center gap-6  mt-[70px]" data-aos="flip-left" >
             <h1 className="md:text-6xl text-3xl font-bold text-center  gradient-text">
                 Bring your child’s <br /> dream event to life
             </h1>

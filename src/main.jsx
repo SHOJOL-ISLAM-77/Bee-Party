@@ -29,7 +29,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/seeDetails/:id",
-        element: <PrivetRout><SeeDetails></SeeDetails></PrivetRout>
+        element: <PrivetRout><SeeDetails></SeeDetails></PrivetRout>,
+        loader: ()=> fetch('/Card.json')
       },
       {
         path: "/previews-service",

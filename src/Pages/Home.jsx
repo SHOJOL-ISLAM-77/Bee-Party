@@ -22,11 +22,11 @@ const Home = () => {
     });
     return (
         <div>
-            <div className="h-screen bg-no-repeat bg-cover max-h-[400px] md:max-h-fit" style={bg}>
+            <div className="md:h-[700px] bg-no-repeat bg-cover h-[400px]" style={bg}>
                 <Navbar></Navbar>
                 <Banner ></Banner>
             </div>
-            <div className="my-28 container mx-auto" data-aos="fade-up-right" >
+            <div className="lg:my-28 md:my-20 my-14 container mx-auto" data-aos="fade-up-right" >
                 <h2 className="md:text-5xl text-3xl text-center py-8 font-extrabold">Awesome Services</h2>
                 <p className="text-lg text-center font-Roboto">
                     We are proud that we provide all these services

@@ -1,10 +1,14 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
+    const [show, setShow] = useState(false)
+    const [singUpError, setSingUpError] = useState('');
     const {login} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
@@ -13,17 +17,23 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+
+        setSingUpError('');
         
         login(email, password)
         .then(result => {
             console.log(result);
-
+            Swal.fire(
+                'Good job!',
+                'Login!',
+                'success'
+            )
             navigate(location?.state ? location.state : "/")
 
         })
-        .catch(error =>{
-            console.error(error.massage);
-        })
+        .catch(
+            setSingUpError('Do not match email or password')
+        )
         
     }
     return (
@@ -39,15 +49,19 @@ const Login = () => {
                             </label>
                             <input name="email" type="email" placeholder="email" className="input input-bordered" required />
                         </div>
-                        <div className="form-control">
+                        <div className="form-control relative">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+                            <input type={show ? "text" : "password"} placeholder="password" name="password" className="input input-bordered" required />
+                            <span onClick={() => setShow(!show)} className="absolute right-5 top-[50px] cursor-pointer">{show ? <FaEyeSlash /> : <FaEye />}</span>
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
+                        {
+                            singUpError && <p className="text-red-700 pt-4">{singUpError}</p>
+                        }
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>
                         </div>
