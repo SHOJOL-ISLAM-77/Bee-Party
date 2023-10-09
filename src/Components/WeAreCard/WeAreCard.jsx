@@ -4,7 +4,6 @@ import Swal from 'sweetalert2';
 
 const WeAreCard = ({ cardData }) => {
     const { description, address, img } = cardData;
-    console.log(address, description, img);
 
     const handleModal = () => {
         Swal.fire(

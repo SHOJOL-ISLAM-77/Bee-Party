@@ -17,7 +17,7 @@ const Banner = () => {
             <h4 className="text-base md:text-xl text-center md:py-5 text-black">
                 Make your next birthday party a memorable <br /> one with our expert event management services
             </h4>
-            <Link to='/previews-service' className="btn md:text-lg  px-9 bg-gradient-to-r from-sky-700 to-indigo-900 hover:from-indigo-900 hover:to-sky-700 text-white">Our previews Services <FaArrowRight /></Link>
+            <Link to='/blog' className="btn md:text-lg  px-9 bg-gradient-to-r from-sky-700 to-indigo-900 hover:from-indigo-900 hover:to-sky-700 text-white">See Blog <FaArrowRight /></Link>
         </div>
     );
 };

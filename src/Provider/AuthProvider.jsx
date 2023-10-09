@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import auth from "../firebase/Firebse.config";
 import PropTypes from 'prop-types';
 
@@ -14,9 +14,16 @@ const AuthProvider = ({ children }) => {
     const [loader, setLoader] = useState(false);
 
 
-    const provider = new GoogleAuthProvider();
+    const googleProvider = new GoogleAuthProvider();
     const googlePopUp = () => {
-        return signInWithPopup(auth, provider)
+        setLoader(false)
+        return signInWithPopup(auth, googleProvider)
+    }
+
+    const githubProvider = new GithubAuthProvider();
+    const githubPopUp = () => {
+        setLoader(false)
+        return signInWithPopup(auth, githubProvider)
     }
 
     const createUserWithEmail = (email, password) => {
@@ -35,6 +42,7 @@ const AuthProvider = ({ children }) => {
     }
 
     const uploadProfile = (name, photo) => {
+        setLoader(false)
         return updateProfile(auth.currentUser, { displayName: name, photoURL: photo })
     }
 
@@ -49,7 +57,7 @@ const AuthProvider = ({ children }) => {
         }
     }, [])
 
-    const information = { user, createUserWithEmail, logOut, login, loader, uploadProfile, googlePopUp }
+    const information = { user, createUserWithEmail, logOut, login, loader, uploadProfile, googlePopUp, githubPopUp }
     return (
         <AuthContext.Provider value={information}>
             {children}
