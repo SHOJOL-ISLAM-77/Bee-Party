@@ -16,6 +16,7 @@ import SeeDetails from "./Pages/SeeDetails";
 import PrivetRout from "./PrivateRoute";
 import WeAer from "./Pages/WeAre";
 import PrivateRoute from "./PrivateRoute";
+import Blog from "./Pages/Blog";
 
 const router = createBrowserRouter([
   {
@@ -31,12 +32,17 @@ const router = createBrowserRouter([
       {
         path: "/seeDetails/:id",
         element: <PrivetRout><SeeDetails></SeeDetails></PrivetRout>,
-        loader: ()=> fetch('/Card.json')
+        loader: () => fetch('/Card.json')
       },
       {
         path: "/weAre",
-        element:<PrivateRoute> <WeAer></WeAer></PrivateRoute>,
-        loader:()=> fetch('/WeAre.json')
+        element: <PrivateRoute> <WeAer></WeAer></PrivateRoute>,
+        loader: () => fetch('/WeAre.json')
+      },
+      {
+        path: "/blog",
+        element: <PrivateRoute><Blog></Blog></PrivateRoute>,
+        loader: () => fetch('/blog.json')
       },
       {
         path: "/seeAll",
