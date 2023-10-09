@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "address": "123 Main Street, City, Country",
+      "img": "https://img.freepik.com/free-photo/wine-glasses-served-table-with-lightening-candles-table-number-it_8353-10055.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=ais",
+      "description": "Join us for a magical birthday celebration at our enchanted garden venue. Fun games, delicious cake, and surprises await you!"
+    },
+    {
+      "id": 2,
+      "address": "456 Elm Avenue, Town, Country",
+      "img": "https://img.freepik.com/free-photo/female-wedding-planner-working-ceremony_23-2150167261.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=ais",
+      "description": "Celebrate your special day with a superhero-themed birthday bash. Action-packed games, superhero costumes, and a superhero cake!"
+    },
+    {
+      "id": 3,
+      "address": "789 Oak Road, Village, Country",
+      "img": "https://img.freepik.com/free-photo/prepared-wedding-hall_8353-9873.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=ais",
+      "description": "A tropical luau awaits you for your birthday! Hawaiian music, leis, and a luau feast under the stars."
+    },
+    {
+      "id": 4,
+      "address": "101 Pine Lane, Beach Town, Country",
+      "img": "https://img.freepik.com/free-photo/medium-shot-people-event-with-food_23-2149304718.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=ais",
+      "description": "Surf's up for your birthday! Ride the waves and enjoy a beachside barbecue with friends."
+    },
+    {
+      "id": 5,
+      "address": "222 Cherry Street, Mountain Town, Country",
+      "img": "https://img.freepik.com/free-photo/view-canapes-tartlets-buffet-table_1262-2061.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=ais",
+      "description": "Get ready for an adventure-filled birthday in the mountains! Hiking, camping, and a bonfire."
+    },
+    {
+      "id": 6,
+      "address": "333 Maple Avenue, Lakeside, Country",
+      "img": "https://img.freepik.com/free-photo/female-wedding-planner-working-ceremony_23-2150167218.jpg?size=626&ext=jpg&uid=R101136758&ga=GA1.2.489338979.1694797420&semt=ais",
+      "description": "Sail into a nautical-themed birthday! Boat rides, seafood buffet, and a waterfront party."
+    }
+  ]

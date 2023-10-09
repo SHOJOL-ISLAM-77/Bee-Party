@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 
 const Login = () => {
     const [show, setShow] = useState(false)
-    const [singUpError, setSingUpError] = useState('');
+    const [loginError, setLoginError] = useState('');
     const {login} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
@@ -18,7 +18,7 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        setSingUpError('');
+        setLoginError('');
         
         login(email, password)
         .then(result => {
@@ -32,7 +32,7 @@ const Login = () => {
 
         })
         .catch(
-            setSingUpError('Do not match email or password')
+            setLoginError('Do not match email or password')
         )
         
     }
@@ -60,7 +60,7 @@ const Login = () => {
                             </label>
                         </div>
                         {
-                            singUpError && <p className="text-red-700 pt-4">{singUpError}</p>
+                            loginError && <p className="text-red-700 pt-4">{loginError}</p>
                         }
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>

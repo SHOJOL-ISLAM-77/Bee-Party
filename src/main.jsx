@@ -8,13 +8,14 @@ import "./index.css";
 import ErrorPage from "./error-apge";
 import Root from "./Components/Root";
 import Home from "./Pages/Home";
-import PreviewsService from "./Pages/PreviewsService";
 import SeeAll from "./Pages/SeeAll";
 import Login from "./Pages/Login";
 import SingUp from "./Pages/SingUp";
 import AuthProvider from "./Provider/AuthProvider";
 import SeeDetails from "./Pages/SeeDetails";
 import PrivetRout from "./PrivateRoute";
+import WeAer from "./Pages/WeAre";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -33,8 +34,9 @@ const router = createBrowserRouter([
         loader: ()=> fetch('/Card.json')
       },
       {
-        path: "/previews-service",
-        element: <PreviewsService></PreviewsService>
+        path: "/weAre",
+        element:<PrivateRoute> <WeAer></WeAer></PrivateRoute>,
+        loader:()=> fetch('/WeAre.json')
       },
       {
         path: "/seeAll",
@@ -47,7 +49,7 @@ const router = createBrowserRouter([
       {
         path: "/singUp",
         element: <SingUp></SingUp>
-      }
+      },
     ]
   },
 ]);
