@@ -17,7 +17,7 @@ const WhatWeOffer = () => {
 
     return (
        <div className="bg-gradient-to-r from-blue-900 via-indigo-600 to-blue-900 text-white px-5">
-         <div className="flex justify-around items-center py-8 md:py-44 flex-col-reverse lg:flex-row">
+         <div className="flex justify-around items-center py-8 md:py-44 flex-col-reverse lg:flex-row container mx-auto">
             <div className="grid grid-cols-3 gap-14 text-center ">
                 <div  data-aos="fade-down-right">
                     <img src={img1} className="md:h-36 md:w-36 w-16 h-16 rounded-full mb-5 mx-auto" alt="" />
