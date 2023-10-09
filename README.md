@@ -1,7 +1,7 @@
 # Bee party 
 ## Live Site
 
-You can access the live site [here](https://www.myawesomesite.com).
+You can access the live site [here](https://bee-party.web.app/).
 
 
 Welcome to Bee party Website! This is a unique web application that offers event planning services. Below are some of the key features and possible future improvements for this website.
