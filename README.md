@@ -42,9 +42,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A: {}
+#### Answer: A: `{}` 
 
-<i>Here 'let greeting' is a name of variable but there is no value. Then set a empty object as value of greeting so the value greeting is a empty object</i>
+<i>Here 'let greeting' is a name of variable but there is no value. Then set a empty object as value of greeting so the value greeting is a empty object.</i>
 
 </p>
 </details>
@@ -67,9 +67,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `"12"`  
 
-<i>Write your explanation here</i>
+<i>Here a function to summation a and b . Then a = number and b = string so string summation number equal string so answer is "12"</i>
 
 </p>
 </details>
@@ -93,9 +93,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']` 
 
-<i>Write your explanation here</i>
+<i>Here food a array and make a object with food array's first element named info then change the value of info.favoriteFood did not change the value of food array so food = ['🍕', '🍫', '🥑', '🍔'] </i>
 
 </p>
 </details>
@@ -118,9 +118,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>Answer is "Hi there, undefined" because SayHi function take a parameter and return  "hi there, parameter" here did not set parameter value so the function provide "Hi there, undefined"</i>
 
 </p>
 </details>
@@ -146,9 +146,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `3`
 
-<i>Write your explanation here</i>
+<i>Here throw a loop in the nums array and check if num === true then count += 1 so 0 a false value That's why answer equal 3</i>
 
 </p>
 </details>
