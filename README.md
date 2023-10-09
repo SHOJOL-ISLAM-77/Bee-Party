@@ -1,5 +1,4 @@
 # Bee party 
-## Live Site
 
 You can access the live site [here](https://bee-party.web.app/).
 
