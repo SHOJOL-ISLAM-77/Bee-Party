@@ -57,9 +57,9 @@ const SingUp = () => {
 
     const handleGoogleSingUp = () => {
         googlePopUp()
-            .then(
-                navigate(location?.state ? location.state : "/")
-            )
+            .then(result =>{
+                console.log(result);
+            })
             .catch(error => {
                 setSingUpError(error.message)
             })
