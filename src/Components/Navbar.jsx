@@ -34,7 +34,7 @@ const Navbar = () => {
                 </nav>
                 <div className="absolute top-10 right-5 flex items-center gap-5  lg:hidden" onClick={() => setShow(!show)}>
                     {
-                        user && <div className="flex items-center gap-5"><p className="sm:text-2xl text-base">{name.length < 5 ? name : name.split(" ")[1]}</p> <img className="h-10 w-10 rounded-full" src={photo} alt="" /></div>
+                        user && <div className="flex items-center gap-5"><p className="sm:text-2xl text-base">{name}</p> <img className="h-10 w-10 rounded-full" src={photo} alt="" /></div>
                     }
                     {
                         show ? <FaTimes className="text-center text-2xl cursor-pointer" /> : <FaAlignJustify className="text-center text-2xl cursor-pointer" />

@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 const SingUp = () => {
     const [show, setShow] = useState(false)
     const [singUpError, setSingUpError] = useState('');
-    const { createUserWithEmail, uploadProfile, googlePopUp, githubPopUp } = useContext(AuthContext);
+    const { createUserWithEmail, uploadProfile, googlePopUp, githubPopUp,  } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
 
@@ -44,7 +44,7 @@ const SingUp = () => {
                     })
                 Swal.fire(
                     'Good job!',
-                    'We come to congratulate you!',
+                    'Thanks for Sing Up!',
                     'success'
                 )
                 navigate(location?.state ? location.state : "/")
